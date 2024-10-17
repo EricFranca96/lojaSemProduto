@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+/* Confirmar se o reset no menu css esta global ou não */
+
+/* Variaveis de cores */
+:root {
+    --white: #fff;
+    --dark1: #34344e;
+    --white: #3a415a;
+    --white: #566981;
+    --white: #89a7b1;
+    --white: #cbdad5;
+    --white: #70e3ea;
+}
+
+/* Corpo do site */
+
+body {
+    background-color: var(--dark1);
+    height: 100vh;/*Aqui ele vai cetano conforme coloca mais conteúdo*/
+
+    font-family: 'Lato', sans-serif;/* Talvez tenha interferencia com menu.css */
+}
+

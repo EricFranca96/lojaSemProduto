@@ -1,0 +1,139 @@
+@charset "UTF-8";
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header.menu {
+    background-color: #24252a;
+    box-shadow: 0px 3px 10px #464646;
+
+    /* TESTE PARA FIXAR O MENU
+    max-height: 200px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000; */
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 6rem;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    
+}
+
+img.logo1 {
+    width: 100px;
+    height: 50px;
+}
+
+
+/* Lista do menu */
+
+.lista-menu {
+    display: flex;
+    align-items: center;
+}
+
+.lista-menu ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+/* Itens do menu */
+
+.item-menu {
+    margin: 0 15px;
+}
+
+.link-menu {
+    text-decoration: none;
+    font-size: 1.15rem;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+/* criar efeito que fique marcado onde esta na página
+
+ .link-menu:hover {
+    color: black;
+    transition: .4s;
+    text-decoration: underline;
+} */
+
+.botao-loja button {
+    border: none;
+    background-color: #0187a7;
+    padding: 10px 15px;
+    border-radius: 5px;
+    width: 150px;
+    cursor: pointer;
+} 
+
+.botao-loja button a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.1rem;
+}
+
+.menu-mobile-icone {
+    display: none;
+}
+
+.menu-mobile {
+    display: none;
+}
+
+/* Menu Responsivo */
+
+@media screen and (max-width: 730px) {
+    .nav-bar {
+        padding: 1.5rem 4rem;
+    }
+    .item-menu {
+        display: none;
+    }
+
+    .botao-loja {
+        display: none;
+    }
+    .menu-mobile-icone{
+        display: block;
+    }
+
+    .menu-mobile-icone button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+
+    .menu-mobile ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+
+    .menu-mobile .item-menu {
+        display: block;
+        padding-top: 1.2rem;
+    }
+
+    .menu-mobile .botao-loja button {
+        width: 100%;
+    }
+
+    .open {
+        display: block;
+    }
+
+}
