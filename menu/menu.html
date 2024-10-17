@@ -1,12 +1,63 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    
+    <title>Menu Responsivo</title>
+    
+    <link rel="stylesheet" href="css/style.css">
+    
 </head>
 <body>
-    <h1>ola</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum soluta iusto ab dignissimos voluptate ratione veniam nemo ad quae! A sint in doloremque cumque. Dignissimos enim veniam laboriosam ipsa nulla!</p>
+    <header class="menu">
+        <nav class="nav-bar">
+            <div class="logo">
+                <img class="logo1" src="imagens/logo.jpg" alt="Logo">
+            </div><!-- Logo Tipo -->
+            <div class="lista-menu">
+                <ul>
+                    <li class="item-menu"><a href="#" class="link-menu">Início</a></li>
+                    <li class="item-menu"><a href="#" class="link-menu">Produtos</a></li>
+                    <li class="item-menu"><a href="#" class="link-menu">Contato</a></li>
+                </ul>
+            </div><!-- Lista do menu -->
+            <div class="botao-loja">
+                <button><a href="#">Loja</a></button>
+            </div>
+
+            <!-- Deixar resposivo -->
+            <div class="menu-mobile-icone">
+                <button onclick="menuShow()"><img src="imagens/botao.jpg" alt=""></button>
+            </div>
+        </nav>
+        <!-- Botao resposivo -->
+        <div class="menu-mobile">
+            <ul>
+                <li class="item-menu"><a href="#" class="link-menu">Início</a></li>
+                <li class="item-menu"><a href="#" class="link-menu">Produtos</a></li>
+                <li class="item-menu"><a href="#" class="link-menu">Contato</a></li>
+            </ul>
+            <div class="botao-loja">
+                <button><a href="#">Loja</a></button>
+            </div>
+        </div>
+
+    </header><!-- Menu -->
+
+
+
+    <main>
+
+    </main>
+    <footer>
+
+    </footer>
+
+
+
+
+
+    <script src="js/menu.js"></script>
 </body>
 </html>
