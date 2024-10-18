@@ -1,0 +1,36 @@
+
+h1 {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.primeiros-produtos {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.card {
+    margin: 50px;
+    background-color: rgb(230, 230, 230);
+    color: #202020;
+    width: 300px;
+    height: 350px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.card > h1 {
+    font-size: 25px;
+    padding-top: 10px;
+    
+}
+
+.card > img {
+    height: 180px;
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
