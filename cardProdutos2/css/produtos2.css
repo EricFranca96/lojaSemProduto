@@ -1,0 +1,64 @@
+section {
+    display: flex;
+    justify-content: center;
+}
+
+
+.caixa-titulo {
+    position: absolute; /* Fixa a div no topo */
+    top: 0;
+    left: 0;
+    width: 100%; /* Faz com que a div ocupe toda a largura disponível */
+    text-align: center; /* Centraliza o título */
+    
+    padding: 10px 0; /* Espaçamento interno (topo e base) */
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 4px; /* Sombra sutil para destacar o título */
+    z-index: 10; /* Garante que a div fique acima das outras */
+}
+
+
+
+
+
+.caixa-principal {
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: center;
+    height: 450px;
+    width: 300px;
+    position: relative;
+    /* Isso torna a caixa principal o ponto de referência para o position absoluto */
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    padding: 10px;
+    margin: 20px;
+}
+
+
+.caixa-centro {
+    margin-top: 80px;
+    width: 100%;
+    /* Aumenta a largura para 100% da div principal */
+    display: flex;
+    flex-wrap: wrap;
+    /* Permite que as imagens quebrem em múltiplas linhas */
+    justify-content: center;
+    /* Centraliza as caixas de imagem */
+    gap: 10px;
+    /* Espaçamento entre as imagens */
+}
+
+.caixa-img {
+    width: 45%;
+    /* As caixas de imagem ocuparão quase metade da largura, permitindo duas por linha */
+    display: flex;
+    justify-content: center;
+    /* Centraliza o conteúdo dentro da caixa de imagem */
+    align-items: center;
+}
+
+.caixa-img>img {
+    height: 100px;
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
